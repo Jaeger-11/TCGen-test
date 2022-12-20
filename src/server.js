@@ -21,7 +21,7 @@ const Authentication = require('../middlewares/authentication');
 const authenticationRouter = require("./router/authRoutes");
 const termsConditionsRouter = require("./router/t-and-c-Routes");
 
-app.use('/', (req,res) => {
+app.get('/', (req,res) => {
     res.send("<h1>TEAM CORMORANT</h1>")
 })
 app.use("/api/auth", authenticationRouter)
